@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html><head><title>Alert HSSF</title></head><body>
+<h2>Aktifkan Alert HSSF</h2>
+<input type="email" id="email" placeholder="Email kamu" />
+<button onclick="setupAlert()">Aktifkan</button>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+function setupAlert() {
+  const email = document.getElementById('email').value;
+  emailjs.init('YOUR_PUBLIC_KEY'); // Ganti dengan key EmailJS
+  alert('Alert aktif! Kamu akan dapat email jika harga < $90K');
+}
+</script>
+</body></html>
